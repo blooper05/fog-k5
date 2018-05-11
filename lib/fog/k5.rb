@@ -1,4 +1,5 @@
 require 'fog/core'
+require 'fog/json'
 require 'fog/k5/version'
 
 module Fog
