@@ -4,6 +4,11 @@ require 'fog/k5/version'
 
 module Fog
   module K5
-    # Your code goes here...
+    extend Fog::Provider
+    service(:storage, :Storage)
+  end
+
+  module Storage
+    autoload :K5, File.expand_path('storage/k5', __dir__)
   end
 end
