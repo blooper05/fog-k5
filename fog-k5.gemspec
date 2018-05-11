@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["legend.of.blooper@gmail.com"]
 
   spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.description   = %q{This library can be used as a module for `fog` or as standalone provider to use the FUJITSU Cloud Service K5 in applications.}
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
