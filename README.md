@@ -1,5 +1,12 @@
 # Fog::K5
 
+[![Build Status](https://img.shields.io/travis/blooper05/fog-k5.svg?longCache=true&style=flat)](https://travis-ci.com/blooper05/fog-k5)
+[![Dependency Status](https://img.shields.io/gemnasium/blooper05/fog-k5.svg?longCache=true&style=flat)](https://gemnasium.com/blooper05/fog-k5)
+[![Code Climate](https://img.shields.io/codeclimate/maintainability/blooper05/fog-k5.svg?longCache=true&style=flat)](https://codeclimate.com/github/blooper05/fog-k5)
+[![Coverage](https://img.shields.io/codeclimate/c/blooper05/fog-k5.svg?longCache=true&style=flat)](https://codeclimate.com/github/blooper05/fog-k5)
+[![Gem Version](https://img.shields.io/gem/v/fog-k5.svg?longCache=true&style=flat)](https://rubygems.org/gems/fog-k5)
+[![License](https://img.shields.io/github/license/blooper05/fog-k5.svg?longCache=true&style=flat)](https://github.com/blooper05/fog-k5/blob/master/LICENSE)
+
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fog/k5`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
