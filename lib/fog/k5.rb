@@ -1,4 +1,4 @@
-require "fog/k5/version"
+require 'fog/k5/version'
 
 module Fog
   module K5
