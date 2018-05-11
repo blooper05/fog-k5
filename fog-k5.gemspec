@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Module for the 'fog' gem to support FUJITSU Cloud Service K5.}
   spec.description   = %q{This library can be used as a module for `fog` or as standalone provider to use the FUJITSU Cloud Service K5 in applications.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/blooper05/fog-k5"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
