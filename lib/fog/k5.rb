@@ -1,3 +1,4 @@
+require 'fog/core'
 require 'fog/k5/version'
 
 module Fog
