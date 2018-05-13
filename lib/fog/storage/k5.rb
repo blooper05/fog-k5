@@ -6,7 +6,10 @@ module Fog
       autoload :Utils, File.expand_path('k5/utils', __dir__)
 
       requires :k5_region,
-               :k5_project_id
+               :k5_project_id,
+               :k5_domain_name,
+               :k5_user_name,
+               :k5_user_password
 
       request_path 'fog/storage/k5/requests'
       request :list_containers

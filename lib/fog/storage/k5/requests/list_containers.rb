@@ -5,7 +5,7 @@ module Fog
         def list_containers(_options = {})
           request(
             headers: {
-              'X-Auth-Token' => '',
+              'X-Auth-Token' => Fog.credentials[:k5_auth_token],
             },
             method: :GET,
           )
