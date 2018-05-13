@@ -11,6 +11,9 @@ module Fog
                :k5_user_name,
                :k5_user_password
 
+      recognizes :k5_auth_token,
+                 :k5_auth_token_expires_at
+
       request_path 'fog/storage/k5/requests'
       request :list_containers
     end
