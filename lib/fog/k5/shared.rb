@@ -1,7 +1,13 @@
 module Fog
   module K5
     module Shared
-      K5_AUTH_BASE_URL = ''.freeze
+      K5_URL_SCHEME = 'https'.freeze
+      K5_URL_SUFFIX = 'cloud.global.fujitsu.com'.freeze
+
+      def build_url(url_type:)
+        region = Fog.credentials[:k5_region]
+        "#{K5_URL_SCHEME}://#{url_type}.#{region}.#{K5_URL_SUFFIX}/"
+      end
 
       def refresh_auth_token_if_expired
         refresh_auth_token if auth_token_expired?
@@ -15,7 +21,7 @@ module Fog
       end
 
       def refresh_auth_token
-        connection = Excon.new(K5_AUTH_BASE_URL)
+        connection = Excon.new(build_url(url_type: 'identity'))
         response   = connection.post(
           path:       'v3/auth/tokens',
           idempotent: true,
