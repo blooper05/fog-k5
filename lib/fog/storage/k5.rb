@@ -15,6 +15,7 @@ module Fog
                  :k5_auth_token_expires_at
 
       request_path 'fog/storage/k5/requests'
+      request :get_object
       request :list_containers
       request :list_objects
       request :put_object
