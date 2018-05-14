@@ -14,6 +14,9 @@ module Fog
       recognizes :k5_auth_token,
                  :k5_auth_token_expires_at
 
+      K5_STORAGE_URL_TYPE    = 'objectstorage'.freeze
+      K5_STORAGE_URL_VERSION = 'v1'.freeze
+
       request_path 'fog/storage/k5/requests'
       request :get_object
       request :list_containers

@@ -5,9 +5,6 @@ module Fog
         include Utils
         include Fog::K5::Shared
 
-        K5_STORAGE_URL_TYPE    = 'objectstorage'.freeze
-        K5_STORAGE_URL_VERSION = 'v1'.freeze
-
         def initialize(options = {})
           Fog.credentials[:k5_region]        = options[:k5_region]
           Fog.credentials[:k5_project_id]    = options[:k5_project_id]
