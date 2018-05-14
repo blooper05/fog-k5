@@ -17,6 +17,7 @@ module Fog
       request_path 'fog/storage/k5/requests'
       request :list_containers
       request :list_objects
+      request :put_object
     end
   end
 end
