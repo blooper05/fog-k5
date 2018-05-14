@@ -26,6 +26,7 @@ module Fog
       model :file
 
       request_path 'fog/storage/k5/requests'
+      request :delete_object
       request :get_object
       request :list_containers
       request :list_objects
