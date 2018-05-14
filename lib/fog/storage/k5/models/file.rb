@@ -11,6 +11,12 @@ module Fog
         attribute :content_type
         attribute :directory
 
+        def destroy
+          requires :directory, :key
+          service.delete_object(directory.key, key)
+          true
+        end
+
         def public_url
           requires :directory, :key
 
