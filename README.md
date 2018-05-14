@@ -9,6 +9,8 @@
 
 Module for the 'fog' gem to support FUJITSU Cloud Service K5.
 
+**fog-k5 is in an early development phase, mean that many features of K5 were not supported yet.**
+
 ## Installation
 
 Add this line to your application's Gemfile:
