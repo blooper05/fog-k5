@@ -22,16 +22,21 @@ module Fog
 
       def refresh_auth_token
         connection = Excon.new(build_url(url_type: 'identity'))
-        response   = connection.post(
-          path:       'v3/auth/tokens',
-          idempotent: true,
-          expects:    201,
-          body:       auth_request_body,
-        )
+        response   = connection.post(auth_request_params)
+
         Fog.credentials[:k5_auth_token] = response.headers['X-Subject-Token']
         Fog.credentials[:k5_auth_token_expires_at] = Fog::Time.parse(
           Fog::JSON.decode(response.body)['token']['expires_at'],
         )
+      end
+
+      def auth_request_params
+        {
+          path:       'v3/auth/tokens',
+          idempotent: true,
+          expects:    201,
+          body:       auth_request_body,
+        }
       end
 
       def auth_request_body
