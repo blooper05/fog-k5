@@ -4,8 +4,9 @@ module Fog
       class Real
         def delete_object(container, object, _options = {})
           request(
-            method: :DELETE,
-            path:   "#{container}/#{object}",
+            method:  :DELETE,
+            path:    "#{container}/#{object}",
+            expects: 204,
           )
         end
       end

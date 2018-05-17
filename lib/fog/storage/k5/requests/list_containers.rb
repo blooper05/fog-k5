@@ -4,8 +4,9 @@ module Fog
       class Real
         def list_containers(_options = {})
           request(
-            method: :GET,
-            path:   '/',
+            method:  :GET,
+            path:    '/',
+            expects: 200,
           )
         end
       end

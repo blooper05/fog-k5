@@ -5,8 +5,9 @@ module Fog
         def put_object(container, object, data, _options = {})
           data   = Fog::Storage.parse_data(data)
           params = {
-            method: :PUT,
-            path:   "#{container}/#{object}",
+            method:  :PUT,
+            path:    "#{container}/#{object}",
+            expects: 201,
           }
 
           request(params.merge(data))
