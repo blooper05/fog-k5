@@ -4,8 +4,9 @@ module Fog
       class Real
         def get_object(container, object, _options = {})
           request(
-            method: :GET,
-            path:   "#{container}/#{object}",
+            method:  :GET,
+            path:    "#{container}/#{object}",
+            expects: 200,
           )
         end
       end
