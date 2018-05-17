@@ -3,10 +3,17 @@ module Fog
     class K5
       module Utils
         def request(params)
-          parse(@connection.request(params))
+          escaped_params = escape(params)
+          parse(@connection.request(escaped_params))
         end
 
         private
+
+        def escape(params)
+          middlewares = Excon.defaults[:middlewares] +
+                          [Excon::Middleware::EscapePath]
+          params.merge(middlewares: middlewares)
+        end
 
         def parse(response)
           return response if response.body.empty?
