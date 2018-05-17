@@ -6,7 +6,7 @@ module Fog
 
       def build_url(url_type:)
         region = Fog.credentials[:k5_region]
-        "#{K5_URL_SCHEME}://#{url_type}.#{region}.#{K5_URL_SUFFIX}/"
+        "#{K5_URL_SCHEME}://#{url_type}.#{region}.#{K5_URL_SUFFIX}"
       end
 
       def refresh_auth_token_if_expired
