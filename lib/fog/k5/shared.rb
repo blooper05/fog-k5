@@ -4,8 +4,8 @@ module Fog
       K5_URL_SCHEME = 'https'.freeze
       K5_URL_SUFFIX = 'cloud.global.fujitsu.com'.freeze
 
-      def build_url(url_type:)
-        region = Fog.credentials[:k5_region]
+      def build_url(url_type:, region: nil)
+        region ||= @k5_region
         "#{K5_URL_SCHEME}://#{url_type}.#{region}.#{K5_URL_SUFFIX}"
       end
 
@@ -16,16 +16,16 @@ module Fog
       private
 
       def auth_token_expired?
-        !Fog.credentials[:k5_auth_token_expires_at] ||
-          Fog.credentials[:k5_auth_token_expires_at] - 300 < Fog::Time.now
+        !@k5_auth_token_expires_at ||
+          @k5_auth_token_expires_at - 300 < Fog::Time.now
       end
 
       def refresh_auth_token
         connection = Excon.new(build_url(url_type: 'identity'))
         response   = connection.post(auth_request_params)
 
-        Fog.credentials[:k5_auth_token] = response.headers['X-Subject-Token']
-        Fog.credentials[:k5_auth_token_expires_at] = Fog::Time.parse(
+        @k5_auth_token = response.headers['X-Subject-Token']
+        @k5_auth_token_expires_at = Fog::Time.parse(
           Fog::JSON.decode(response.body)['token']['expires_at'],
         )
       end
@@ -47,16 +47,16 @@ module Fog
               password: {
                 user: {
                   domain: {
-                    name: Fog.credentials[:k5_domain_name],
+                    name: @k5_domain_name,
                   },
-                  name: Fog.credentials[:k5_user_name],
-                  password: Fog.credentials[:k5_user_password],
+                  name: @k5_user_name,
+                  password: @k5_user_password,
                 },
               },
             },
             scope: {
               project: {
-                id: Fog.credentials[:k5_project_id],
+                id: @k5_project_id,
               },
             },
           },

@@ -20,9 +20,10 @@ module Fog
         def public_url
           requires :directory, :key
 
-          project_id = Fog.credentials[:k5_project_id]
+          region     = service.k5_region
+          project_id = service.k5_project_id
           version    = K5_STORAGE_URL_VERSION
-          url        = build_url(url_type: K5_STORAGE_URL_TYPE)
+          url        = build_url(url_type: K5_STORAGE_URL_TYPE, region: region)
           container  = directory.key
 
           "#{url}/#{version}/AUTH_#{project_id}/#{container}/#{key}"
