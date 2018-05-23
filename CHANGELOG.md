@@ -1,5 +1,16 @@
 # Change Log
 
+## [v0.1.2](https://github.com/blooper05/fog-k5/tree/v0.1.2) (2018-05-23)
+[Full Changelog](https://github.com/blooper05/fog-k5/compare/v0.1.1...v0.1.2)
+
+**Fixed bugs:**
+
+- Authentication token is not updated [\#9](https://github.com/blooper05/fog-k5/issues/9)
+
+**Merged pull requests:**
+
+- 🐛 Use instance variables instead of Fog.credentials [\#10](https://github.com/blooper05/fog-k5/pull/10) ([blooper05](https://github.com/blooper05))
+
 ## [v0.1.1](https://github.com/blooper05/fog-k5/tree/v0.1.1) (2018-05-17)
 [Full Changelog](https://github.com/blooper05/fog-k5/compare/v0.1.0...v0.1.1)
 
