@@ -1,11 +1,18 @@
 # Change Log
 
-## [v0.1.2](https://github.com/blooper05/fog-k5/tree/v0.1.2) (2018-05-23)
-[Full Changelog](https://github.com/blooper05/fog-k5/compare/v0.1.1...v0.1.2)
+## [v0.1.3](https://github.com/blooper05/fog-k5/tree/v0.1.3) (2018-05-24)
+[Full Changelog](https://github.com/blooper05/fog-k5/compare/v0.1.2...v0.1.3)
 
 **Fixed bugs:**
 
 - Authentication token is not updated [\#9](https://github.com/blooper05/fog-k5/issues/9)
+
+**Merged pull requests:**
+
+- 🐛 Update the authentication token this time for sure [\#11](https://github.com/blooper05/fog-k5/pull/11) ([blooper05](https://github.com/blooper05))
+
+## [v0.1.2](https://github.com/blooper05/fog-k5/tree/v0.1.2) (2018-05-23)
+[Full Changelog](https://github.com/blooper05/fog-k5/compare/v0.1.1...v0.1.2)
 
 **Merged pull requests:**
 
