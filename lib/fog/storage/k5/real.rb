@@ -22,13 +22,10 @@ module Fog
           @k5_domain_name   = options[:k5_domain_name]
           @k5_user_name     = options[:k5_user_name]
           @k5_user_password = options[:k5_user_password]
-
-          refresh_auth_token_if_expired
         end
 
         def params
           {
-            headers:     { 'X-Auth-Token' => @k5_auth_token },
             path_prefix: "#{K5_STORAGE_URL_VERSION}/AUTH_#{@k5_project_id}",
             query:       { format: :json },
           }
