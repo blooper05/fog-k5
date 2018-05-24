@@ -28,7 +28,6 @@ module Fog
 
         def params
           {
-            headers:     { 'X-Auth-Token' => @k5_auth_token },
             path_prefix: "#{K5_STORAGE_URL_VERSION}/AUTH_#{@k5_project_id}",
             query:       { format: :json },
           }
