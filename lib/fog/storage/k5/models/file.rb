@@ -20,13 +20,14 @@ module Fog
         def public_url
           requires :directory, :key
 
-          region     = service.k5_region
-          project_id = service.k5_project_id
-          version    = K5_STORAGE_URL_VERSION
-          url        = build_url(url_type: K5_STORAGE_URL_TYPE, region: region)
-          container  = directory.key
+          region      = service.k5_region
+          project_id  = service.k5_project_id
+          version     = K5_STORAGE_URL_VERSION
+          url         = build_url(url_type: K5_STORAGE_URL_TYPE, region: region)
+          container   = directory.key
+          escaped_key = Excon::Utils.escape_uri(key)
 
-          "#{url}/#{version}/AUTH_#{project_id}/#{container}/#{key}"
+          "#{url}/#{version}/AUTH_#{project_id}/#{container}/#{escaped_key}"
         end
 
         def save
