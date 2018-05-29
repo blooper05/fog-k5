@@ -1,5 +1,16 @@
 # Change Log
 
+## [v0.1.4](https://github.com/blooper05/fog-k5/tree/v0.1.4) (2018-05-29)
+[Full Changelog](https://github.com/blooper05/fog-k5/compare/v0.1.3...v0.1.4)
+
+**Fixed bugs:**
+
+- The URLs of the files are not escaped [\#13](https://github.com/blooper05/fog-k5/issues/13)
+
+**Merged pull requests:**
+
+- 🐛 Escape key of file for public\_url [\#14](https://github.com/blooper05/fog-k5/pull/14) ([blooper05](https://github.com/blooper05))
+
 ## [v0.1.3](https://github.com/blooper05/fog-k5/tree/v0.1.3) (2018-05-24)
 [Full Changelog](https://github.com/blooper05/fog-k5/compare/v0.1.2...v0.1.3)
 
