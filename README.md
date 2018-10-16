@@ -1,11 +1,11 @@
 # Fog::K5
 
-[![Build Status](https://img.shields.io/travis/blooper05/fog-k5.svg?longCache=true&style=flat)](https://travis-ci.com/blooper05/fog-k5)
-[![Dependency Status](https://img.shields.io/gemnasium/blooper05/fog-k5.svg?longCache=true&style=flat)](https://gemnasium.com/blooper05/fog-k5)
-[![Code Climate](https://img.shields.io/codeclimate/maintainability/blooper05/fog-k5.svg?longCache=true&style=flat)](https://codeclimate.com/github/blooper05/fog-k5)
-[![Coverage](https://img.shields.io/codeclimate/c/blooper05/fog-k5.svg?longCache=true&style=flat)](https://codeclimate.com/github/blooper05/fog-k5)
-[![Gem Version](https://img.shields.io/gem/v/fog-k5.svg?longCache=true&style=flat)](https://rubygems.org/gems/fog-k5)
-[![License](https://img.shields.io/github/license/blooper05/fog-k5.svg?longCache=true&style=flat)](https://github.com/blooper05/fog-k5/blob/master/LICENSE)
+[![Build Status](https://badgen.net/travis/blooper05/fog-k5?icon=travis)](https://travis-ci.com/blooper05/fog-k5)
+[![Dependency Status](https://api.dependabot.com/badges/status?host=github&repo=blooper05/fog-k5)](https://dependabot.com)
+[![Maintainability](https://badgen.net/codeclimate/maintainability/blooper05/fog-k5?icon=codeclimate)](https://codeclimate.com/github/blooper05/fog-k5)
+[![Coverage](https://badgen.net/codeclimate/coverage/blooper05/fog-k5?icon=codeclimate)](https://codeclimate.com/github/blooper05/fog-k5)
+[![Version](https://badgen.net/rubygems/v/fog-k5?icon=ruby)](https://rubygems.org/gems/fog-k5)
+[![License](https://badgen.net/github/license/blooper05/fog-k5?icon=github)](https://github.com/blooper05/fog-k5/blob/master/LICENSE)
 
 Module for the 'fog' gem to support FUJITSU Cloud Service K5.
 
