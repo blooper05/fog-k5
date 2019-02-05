@@ -1,8 +1,15 @@
+---
 AllCops:
   DefaultFormatter: fuubar
   DisplayCopNames: true
   DisplayStyleGuide: true
   ExtraDetails: true
+
+#################### Layout ################################
+
+Layout/AlignHash:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
 
 #################### Style #################################
 

@@ -43,18 +43,18 @@ module Fog
         Fog::JSON.encode(
           auth: {
             identity: {
-              methods: %w[password],
+              methods:  %w[password],
               password: {
                 user: {
-                  domain: {
+                  domain:   {
                     name: @k5_domain_name,
                   },
-                  name: @k5_user_name,
+                  name:     @k5_user_name,
                   password: @k5_user_password,
                 },
               },
             },
-            scope: {
+            scope:    {
               project: {
                 id: @k5_project_id,
               },
