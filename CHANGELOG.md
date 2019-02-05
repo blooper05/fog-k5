@@ -1,5 +1,18 @@
 # Change Log
 
+## [v0.1.5](https://github.com/blooper05/fog-k5/tree/v0.1.5) (2019-02-05)
+[Full Changelog](https://github.com/blooper05/fog-k5/compare/v0.1.4...v0.1.5)
+
+**Merged pull requests:**
+
+- 💚 Manage the settings of Dependabot as a file [\#21](https://github.com/blooper05/fog-k5/pull/21) ([blooper05](https://github.com/blooper05))
+- 👕 Update coding style [\#20](https://github.com/blooper05/fog-k5/pull/20) ([blooper05](https://github.com/blooper05))
+- 📝 Add acknowledgments to README.md [\#19](https://github.com/blooper05/fog-k5/pull/19) ([blooper05](https://github.com/blooper05))
+- 💚 CI against latest Ruby versions [\#18](https://github.com/blooper05/fog-k5/pull/18) ([blooper05](https://github.com/blooper05))
+- ⬆️ Update bundler requirement to \>= 1.16, \< 3 [\#17](https://github.com/blooper05/fog-k5/pull/17) ([blooper05](https://github.com/blooper05))
+- 📝 Change badges from Shields.io to Badgen [\#15](https://github.com/blooper05/fog-k5/pull/15) ([blooper05](https://github.com/blooper05))
+- 💚 Improve Code Climate settings [\#12](https://github.com/blooper05/fog-k5/pull/12) ([blooper05](https://github.com/blooper05))
+
 ## [v0.1.4](https://github.com/blooper05/fog-k5/tree/v0.1.4) (2018-05-29)
 [Full Changelog](https://github.com/blooper05/fog-k5/compare/v0.1.3...v0.1.4)
 
