@@ -1,7 +1,7 @@
 # Fog::K5
 
 [![Build Status](https://badgen.net/travis/blooper05/fog-k5?icon=travis)](https://travis-ci.com/blooper05/fog-k5)
-[![Dependency Status](https://api.dependabot.com/badges/status?host=github&repo=blooper05/fog-k5)](https://dependabot.com)
+[![Dependency Status](https://badgen.net/dependabot/blooper05/fog-k5?icon=dependabot)](https://dependabot.com)
 [![Maintainability](https://badgen.net/codeclimate/maintainability/blooper05/fog-k5?icon=codeclimate)](https://codeclimate.com/github/blooper05/fog-k5)
 [![Coverage](https://badgen.net/codeclimate/coverage/blooper05/fog-k5?icon=codeclimate)](https://codeclimate.com/github/blooper05/fog-k5)
 [![Version](https://badgen.net/rubygems/v/fog-k5?icon=ruby)](https://rubygems.org/gems/fog-k5)
