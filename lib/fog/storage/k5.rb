@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Fog
   module Storage
     class K5 < Fog::Service
@@ -14,8 +16,8 @@ module Fog
       recognizes :k5_auth_token,
                  :k5_auth_token_expires_at
 
-      K5_STORAGE_URL_TYPE    = 'objectstorage'.freeze
-      K5_STORAGE_URL_VERSION = 'v1'.freeze
+      K5_STORAGE_URL_TYPE    = 'objectstorage'
+      K5_STORAGE_URL_VERSION = 'v1'
 
       model_path 'fog/storage/k5/models'
 
