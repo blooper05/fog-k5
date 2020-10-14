@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 module Fog
   module K5
     module Shared
-      K5_URL_SCHEME = 'https'.freeze
-      K5_URL_SUFFIX = 'cloud.global.fujitsu.com'.freeze
+      K5_URL_SCHEME = 'https'
+      K5_URL_SUFFIX = 'cloud.global.fujitsu.com'
 
       def build_url(url_type:, region: nil)
         region ||= @k5_region
